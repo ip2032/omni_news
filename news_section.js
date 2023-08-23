@@ -4,17 +4,6 @@ document.querySelector()(function() {
      */
     var URL = 'https://st.omnidesk.pro/staff/cases/list/custom/g_83283';
 
-    /**
-     * Некоторые переменные, доступные в глобальной видимости Омнидеска:
-     * CurrentCaseId
-     * CurrentUserId
-     * CurrentStaffId
-     * CurrentClientId
-     *
-     * Данные в этих переменных уже можно использовать чтобы получить более развернутый результат по API Омнидеска
-     * https://omnidesk.ru/api/introduction/intro
-     */
-
     var STAFF_ID = CurrentStaffId;
 
     /**
@@ -75,7 +64,7 @@ document.querySelector()(function() {
     addCode(
         HORIZONTAL_MENU_ELEMENTS_SELECTOR,
         `<li class="nav-item nav-item-companies inlb">
-            <a class="nav-item-url " href="#example">Example</a>
+            <a class="nav-item-url" href="https://st.omnidesk.pro/staff/cases/list/custom/g_83283">Example</a>
         </li>`,
         true
     );
@@ -87,7 +76,7 @@ document.querySelector()(function() {
     addCode(
         HORIZONTAL_MENU_BUTTONS_SELECTOR,
         `<li class="global-action-item inlb force-login" title="Example">
-            <a class="nav-item-url" href="#example">
+            <a class="nav-item-url" href="https://st.omnidesk.pro/staff/cases/list/custom/g_83283">
                 <i class="icon fi-star"></i>
             </a>
         </li>`,
