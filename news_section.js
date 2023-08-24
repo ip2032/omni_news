@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$( document ).ready(function() {
     /**
      * Ваш сайт, для примеров работы с запросами
      */
@@ -103,4 +103,4 @@ $(document).ready(function() {
      $(document).find(HORIZONTAL_MENU_SELECTOR).css({
          'border-bottom': 'solid 2px red',
      });
-    }
+});
