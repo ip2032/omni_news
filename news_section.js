@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
     /**
      * Ваш сайт, для примеров работы с запросами
      */
@@ -52,7 +52,55 @@ $(function() {
         }
     };
 
-document.querySelector()(document).find(HORIZONTAL_MENU_SELECTOR).css({
+    /** EXAMPLES */
+
+    /**
+     * Добавляем кастомную информацию над списком обращений
+     *
+     * Сначала заголовок
+     */
+
+    addCode(
+        TOP_PANEL_SELECTOR,
+        `<div style="color:red;">
+            <strong>Данные Example</strong>
+        </div>`,
+        true
+    );
+
+    /**
+     * Пример добавления пункта в меню
+     * Результат в коде Омнидеска https://www.dropbox.com/s/ymscgj7q7loj09o/02_custom_menu_item.png?dl=0
+     */
+    addCode(
+        HORIZONTAL_MENU_ELEMENTS_SELECTOR,
+        `<li class="nav-item nav-item-companies inlb">
+            <a class="nav-item-url " href="#example">Example</a>
+        </li>`,
+        true
+    );
+
+    /**
+     * Пример добавления кнопки в блоках справа
+     * Результат в коде Омнидеска https://www.dropbox.com/s/i0orxacnfrjwtwo/03_custom_button_in_header.png?dl=0
+     */
+    addCode(
+        HORIZONTAL_MENU_BUTTONS_SELECTOR,
+        `<li class="global-action-item inlb force-login" title="Example">
+            <a class="nav-item-url" href="#example">
+                <i class="icon fi-star"></i>
+            </a>
+        </li>`,
+        false
+    );
+
+
+     /**
+      * Добавляем в горизонтальное меню цвета своей компании
+      * Результат в коде Омнидеска https://www.dropbox.com/s/3vtzym61el1659z/04_custom_styles.png?dl=0
+      * Результат на странице https://www.dropbox.com/s/hfo696yiffw455a/04_2_custom_styles.png?dl=0
+      */
+     $(document).find(HORIZONTAL_MENU_SELECTOR).css({
          'border-bottom': 'solid 2px red',
      });
     }
