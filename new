@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
     // ... (Your existing code)
 
     // New section for "Новости"
@@ -11,7 +11,7 @@ $(function() {
     addCode(HORIZONTAL_MENU_ELEMENTS_SELECTOR, NEWS_SECTION_HTML, true);
 
     // ... (Rest of your existing code)
+    
+    console.log("Appending Новости section to menu");
+    addCode(HORIZONTAL_MENU_ELEMENTS_SELECTOR, NEWS_SECTION_HTML, true);
 });
-
-console.log("Appending Новости section to menu");
-addCode(HORIZONTAL_MENU_ELEMENTS_SELECTOR, NEWS_SECTION_HTML, true);
